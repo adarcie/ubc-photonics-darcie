@@ -1,3 +1,6 @@
 KLayout Python scripts
 -MUST BE USED IN KLAYOUT MACROS - do not try to run from standard python
 
+Refer to my thesis for some particular use cases: https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0417524
+
+For example: tiling techniques, parametrized device arrays, PCM ring generation, etc...
