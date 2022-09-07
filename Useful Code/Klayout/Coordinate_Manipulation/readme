@@ -1,0 +1,9 @@
+Scripts for creating arrays of coordinates:
+
+arrayed_coords.py takes a standard coordinate file and creates an array of labels with specific subscripts
+-USE CASE: creating an arrayed copy of a layout after using it for a dose sweep created in BEAMER
+ -if you just array the layout, you cannot differentiate between sections - this adds row and column subscripts so you know where every device is without having to cross-reference the coordinates afterwards
+ -remove original labels from layout first (make sure to create a backup)
+ 
+ 
+simple_text_array.py creates a parametrized array of labels
