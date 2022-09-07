@@ -1,0 +1,7 @@
+invert_custom.py and invert_custom2.py are used to invert a layout that has used the siepic-ebeam package.
+-use boolean operations to bias the layout, then xor with the original to create trenches around waveguides
+-customize the trench width, target and origin layers, and 2-layer vs 1-layer to fit process specifications
+
+
+create_Si_clad.py takes an ebeam layout and adds a cladding layer compatible with the ebeam-ZEP package.
+-essentially the first half of inversion
