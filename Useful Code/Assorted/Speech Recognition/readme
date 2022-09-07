@@ -1,0 +1,20 @@
+ENTER AT YOUR OWN RISK
+-this was a hastily assembled project and is organized as such
+
+This is a project I was working on to create a customized personal assistant using Google's Speech to text API.
+
+voice_commands_v2.py is the main function. It relies on a list of additional commands in commands.csv
+
+It has many capabilities such as standard assistant commands:
+-media controls
+-calculator
+-hotkeys
+
+and more specific commands:
+-paste a section of code that is used regularly (defined in csv)
+
+I was playing around with the ability to add new commands by saying "when I say ____ do _____"
+-this would save it as a properly-formatted command in the csv
+-clearly this would be limited
+
+It only listens when a designated hotkey is pressed.
