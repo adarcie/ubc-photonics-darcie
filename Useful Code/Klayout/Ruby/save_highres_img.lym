@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category/>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <shortcut/>
+ <show-in-menu>false</show-in-menu>
+ <group-name/>
+ <menu-path/>
+ <interpreter>ruby</interpreter>
+ <dsl-interpreter-name/>
+ <text>module MyMacro
+ 
+  include RBA
+
+# Enter your Ruby code here ..
+  lv = pya.LayoutView.current()
+ly = pya.CellView.active().layout()
+
+# top cell bounding box in micrometer units
+bbox = ly.top_cell().dbbox()
+
+# compute an image size having the same aspect ratio than 
+# the bounding box
+w = 640
+h = int(0.5 + w * bbox.height() / bbox.width())
+
+lv.save_image_with_options('/home/matthias/Pictures/discussion_1799.png', w, h, 0, 0, 0, bbox, True)
+
+end
+</text>
+</klayout-macro>

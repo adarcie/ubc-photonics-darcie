@@ -1,0 +1,22 @@
+Identifiers,Function,Arguments,Explanation
+"pause,play,resume",pressbutton,playpause,pause or play music
+"next,next song",pressbutton,nexttrack,go to next song
+"previous,previous song",pressbuttonn,"prevtrack,2",go to previous song
+"louder,volume up",pressbuttonn,"volumeup,10",increase volume
+"softer,quieter,volume down",pressbuttonn,"volumedown,10",decrease volume
+"mute,silence",pressbutton,volumemute,mute volume
+speakers,hotkeys,"alt,delete",switch audio output to speakers
+headphones,hotkeys,"alt,insert",switch audio output to headphones
+brighter,hotkeys,"alt,pgup",increase brightness
+dimmer,hotkeys,"alt,pgdn",decrease brightness
+"run code,execute",pressbutton,f5,presses f5
+make a note,write_note,"cmd,idp",write note - needs cmd and identifier (idp)
+open,open_program,"cmd,idp",open program via windows search
+call me,name_change,"cmd,idp",
+"what's my name,what is my name",myname,,
+"what's,what is",calc,"cmd,idp",
+repeat after me,repeat,"cmd,idp",
+set language to,chng_lang,"cmd,idp",
+enter,type_text,"cmd,idp",
+type Matlab code for import,type_code,"filepath=""filepath"";\nfiles=dir(strcat(filepath,""filename""));,singlearg",
+type Matlab code for data extraction,type_code,"file=files(i);\n%for .csv format\ndat=table2array(readtable(strcat(file.folder,""\"",file.name)));\nwl=dat(:,1)*1e6;\npw=dat(:,2:end);\npw(:,2)=pw(:,2)+p_offset;",
